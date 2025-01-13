@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"adxl345\startup_stm32f407xx.o"
+"adxl345\main.o"
+"adxl345\stm32f4xx_it.o"
+"adxl345\stm32f4xx_hal_msp.o"
+"adxl345\stm32f4xx_hal_i2c.o"
+"adxl345\stm32f4xx_hal_i2c_ex.o"
+"adxl345\stm32f4xx_hal_rcc.o"
+"adxl345\stm32f4xx_hal_rcc_ex.o"
+"adxl345\stm32f4xx_hal_flash.o"
+"adxl345\stm32f4xx_hal_flash_ex.o"
+"adxl345\stm32f4xx_hal_flash_ramfunc.o"
+"adxl345\stm32f4xx_hal_gpio.o"
+"adxl345\stm32f4xx_hal_dma_ex.o"
+"adxl345\stm32f4xx_hal_dma.o"
+"adxl345\stm32f4xx_hal_pwr.o"
+"adxl345\stm32f4xx_hal_pwr_ex.o"
+"adxl345\stm32f4xx_hal_cortex.o"
+"adxl345\stm32f4xx_hal.o"
+"adxl345\stm32f4xx_hal_exti.o"
+"adxl345\stm32f4xx_hal_tim.o"
+"adxl345\stm32f4xx_hal_tim_ex.o"
+"adxl345\system_stm32f4xx.o"
+--strict --scatter "adxl345\adxl345.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "adxl345.map" -o adxl345\adxl345.axf
